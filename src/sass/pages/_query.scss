@@ -1,0 +1,97 @@
+.query {
+  width: 100%;
+  position: relative;
+  height: auto;
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+}
+
+.queryChat {
+  padding: 1.25rem 1.5rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  display: flex;
+  flex-flow: column;
+  height: 75vh;
+  margin-top: 1.5rem;
+  overflow-y: auto;
+
+  &__header {
+    height: 58px;
+    border-bottom: 1px solid #edf2f6;
+    h2 {
+      span {
+        color: $TEXT_GRAYISH_COLOR;
+        font-weight: 400;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+
+  &__chat {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+
+    &__messages {
+      width: 100%;
+      // height: 80%;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-flow: column;
+      &__message {
+        max-width: 517px;
+        font-size: 0.75rem;
+        margin-top: 1rem;
+        width: fit-content;
+        &__my {
+          align-self: flex-end;
+          .queryChat__chat__messages__message__message {
+            background-color: $THEME_COLOR;
+            color: #f8f9fb;
+            border-radius: 0.5rem 0 0.5rem 0.5rem;
+          }
+        }
+        &__message {
+          padding: 10px;
+          background-color: $GRAY-2;
+          border-radius: 0 0.5rem 0.5rem 0.5rem;
+        }
+
+        &--time {
+          font-size: 0.75rem;
+          color: $TEXT_GRAYISH_COLOR;
+          margin-top: 0.5rem;
+          display: inline-block;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__messageInput {
+      width: 100%;
+      border: 1px solid $GRAY-2;
+      border-radius: 0.75rem;
+      padding: 0.75rem;
+      background-color: #f8f9fb;
+
+      input {
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        outline: none;
+        background-color: transparent;
+      }
+
+      &__buttons {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+      }
+    }
+  }
+}

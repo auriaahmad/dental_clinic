@@ -1,0 +1,71 @@
+.changePlan {
+  &__files {
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 102px;
+    position: relative;
+
+    img:nth-child(3) {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 1.125rem;
+      height: 1.125rem;
+    }
+
+    @include respond(tab-port) {
+      h3 {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  &__writtenInsts {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+
+    &__instructs {
+      padding: 0.85rem 1.125rem;
+      border-radius: 2rem;
+      font-size: 0.85rem;
+      position: relative;
+      min-height: 102px;
+      p {
+        color: $TEXT_DEFAULT_COLOR;
+      }
+
+      img {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+    }
+  }
+
+  &__plans {
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+
+    &__plans {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+
+  &__note {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+}

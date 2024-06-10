@@ -1,0 +1,83 @@
+@media (min-width: 900px) {
+  .homeCard {
+    display: flex;
+    padding: 0px 80px 0px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    &__contentSpace {
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(6px);
+      display: flex;
+      height: 363px;
+      padding: 80px 80px 80px 80px;
+      align-items: center;
+      gap: 80px;
+      align-self: stretch;
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+        flex: 1 0 0;
+        &__text1 {
+          color: var(--White, #fff);
+          text-align: center;
+          font-family: 'Inter', sans-serif;
+          font-size: 24px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%; /* 38.4px */
+        }
+        &__text2 {
+          text-align: center;
+          font-family: Times New Roman;
+          font-size: 56px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%; /* 61.6px */
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .mobhomeCard {
+    display: flex;
+    width: 100%;
+    padding: 0px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    &__contentSpace {
+      display: flex;
+      padding: 28px 16px;
+      align-items: center;
+      gap: 80px;
+      align-self: stretch;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(6px);
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        flex: 1 0 0;
+        &__text1 {
+          @include w-14-400-160Mob;
+          text-align: center;
+        }
+        &__text2 {
+          text-align: center;
+          font-family: 'Times New Roman';
+          font-size: 28px;
+          text-align: center;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 110%; /* 30.8px */ /* 61.6px */
+        }
+      }
+    }
+  }
+}

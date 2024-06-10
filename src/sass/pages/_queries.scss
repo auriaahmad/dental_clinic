@@ -1,0 +1,51 @@
+.queries {
+  width: 100%;
+  flex: 1;
+  position: relative;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__icons {
+      display: flex;
+    }
+    &__icons > img {
+      margin-left: 24px;
+    }
+    &__icons > button {
+      margin-left: 8px;
+    }
+  }
+
+  &__filters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__inputContainer {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0 1.5rem 0;
+      &__input {
+        width: 18rem;
+      }
+    }
+    &__button {
+      position: relative;
+      top: 20px;
+      width: 205px;
+
+      @include respond(tab-port) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.planningTableActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}

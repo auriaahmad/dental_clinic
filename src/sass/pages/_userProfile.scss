@@ -1,0 +1,12 @@
+.profile {
+  width: 100%;
+  flex: 1;
+  position: relative;
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+}

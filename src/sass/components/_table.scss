@@ -1,0 +1,124 @@
+.cTable {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px 0px #0000001a;
+  border-radius: 2rem;
+  overflow-x: auto;
+
+  @include respond(tab-port) {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+  }
+
+  &--table {
+    width: 100%;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+    tr {
+      width: 100%;
+      font-size: 0.85rem;
+      font-weight: 500;
+
+      th,
+      td {
+        text-align: start;
+        align-items: center;
+        padding: 1rem 1.5rem;
+      }
+      th {
+        color: $TEXT_GRAYISH_COLOR;
+        font-weight: 500;
+      }
+      td {
+        border-top: 1px solid #edf2f6;
+        color: #32395f;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+
+    @include respond(tab-port) {
+      padding: 0.25rem 0.5rem;
+      background-color: white;
+      border-radius: 0.5rem;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      gap: 0.3525rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+
+      @include respond(tab-port) {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__pages {
+      display: flex;
+      align-items: center;
+      @include respond(tab-port) {
+        font-size: 0.75rem;
+      }
+      &__dots {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.planningCard {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  // box-shadow: 0px 4px 40px 0px #0000001a;
+  border-radius: 0.75rem;
+
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  @include respond(tab-port) {
+    display: flex;
+  }
+  &__col {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+    flex: 1;
+    &__item {
+      display: flex;
+      flex-flow: column;
+      gap: 0.25rem;
+
+      span {
+        display: block;
+        &:first-child {
+          color: $TEXT_GRAYISH_COLOR;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-flow: column;
+    gap: 0.5rem;
+  }
+}

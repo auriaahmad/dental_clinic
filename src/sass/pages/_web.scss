@@ -1,0 +1,36 @@
+@media (min-width: 900px) {
+  .webMob {
+    * {
+      display: none;
+    }
+  }
+
+  .web {
+    display: flex;
+    max-width: 1013px;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 900px) {
+  .web {
+    * {
+      display: none;
+    }
+  }
+
+  .webMob {
+    display: flex;
+    // max-width: 400px;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 5;
+    @media (max-width: 400px) {
+      // width: 370px;
+    }
+  }
+}

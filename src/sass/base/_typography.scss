@@ -1,0 +1,105 @@
+// Font Weight
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+// COLORS
+.color-sky {
+  color: $SKY !important;
+}
+
+.color-danger {
+  color: $DANGER;
+}
+
+.color-primary {
+  color: $PRIMARY;
+}
+
+.heading-1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.heading-2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.heading-5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.home-grayish {
+  color: $HOME_GRAYISH;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.home-white-normal {
+  color: $TEXT_WHITE;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 110%;
+}
+.home-banner-heading {
+  color: $TEXT_WHITE;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.primary-generic {
+  color: #00b0f0;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+.primary-generic-text {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin-top: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.home-primary {
+  color: #00b0f0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+}
+.level1-heading {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 39.6px */
+}

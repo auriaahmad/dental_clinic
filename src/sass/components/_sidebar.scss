@@ -1,0 +1,180 @@
+.sidebar {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, $PRIMARY_COLOR 0%, $SECONDARY_COLOR 100%);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 0 0 0 1.25rem;
+  @include respond(tab-land) {
+    padding: 0 0 0 0.8rem;
+  }
+  @include respond(tab-port) {
+    padding: 0 1.25rem;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  &__top {
+    width: 100%;
+    &__logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 0;
+
+      img {
+        width: 8rem;
+      }
+    }
+
+    &__nav {
+      width: 100%;
+      ul {
+        list-style: none;
+        li {
+          position: relative;
+          padding: 1rem 0.5rem;
+          width: 100%;
+          border-bottom-left-radius: 2rem;
+          border-top-left-radius: 2rem;
+
+          @include respond(tab-land) {
+            padding: 1rem 0.35rem;
+          }
+          @include respond(tab-port) {
+            border-radius: 2.5rem !important;
+          }
+
+          .text {
+            @include respond(tab-land) {
+              font-size: 0.75rem;
+            }
+          }
+
+          .link {
+            text-decoration: none;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            .icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 1.25rem;
+                height: 1.25rem;
+              }
+            }
+            span {
+              color: $TEXT_WHITE !important;
+              font-size: 0.85rem;
+            }
+
+            .curve,
+            .curve-overlay {
+              display: none;
+            }
+          }
+
+          &.active {
+            background-color: $BG_COLOR;
+            padding: 1rem 1rem;
+            .link {
+              span {
+                color: $THEME_COLOR;
+              }
+            }
+            .curve {
+              display: block;
+              @include respond(tab-port) {
+                display: none;
+              }
+              &.active:nth-child(1) {
+                position: absolute;
+                top: -1rem;
+                right: 0;
+                height: 1rem;
+                width: 1rem;
+                border-top-left-radius: 2.5rem;
+                background-color: $BG_COLOR;
+
+                &::before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 100%;
+                  width: 100%;
+                  border-bottom-right-radius: 2.5rem;
+                  border-top-left-radius: 1.75rem;
+                  background: #0a1744;
+                }
+              }
+              &.active:nth-child(2) {
+                position: absolute;
+                bottom: -1rem;
+                right: 0;
+                height: 1rem;
+                width: 1rem;
+                border-bottom-left-radius: 2.5rem;
+                background-color: $BG_COLOR;
+
+                &::before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 100%;
+                  width: 100%;
+                  border-top-right-radius: 2.5rem;
+                  border-bottom-left-radius: 1.75rem;
+                  background: #0b2054;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    .logoutbtn {
+      font-size: 0.8rem;
+    }
+    @include respond(tab-land) {
+      .logoutbtn {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__top {
+      margin-bottom: 72px;
+      display: flex;
+      flex-flow: column;
+      gap: 1.5rem;
+
+      button {
+        display: flex;
+        align-items: center;
+        font-size: 0.75rem;
+        color: white;
+        gap: 0.75rem;
+        font-weight: 600;
+
+        @include respond(tab-land) {
+          gap: 0.4rem;
+          font-size: 0.65rem;
+        }
+      }
+    }
+  }
+}

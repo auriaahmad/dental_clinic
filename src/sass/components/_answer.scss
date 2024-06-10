@@ -1,0 +1,184 @@
+@media (min-width: 900px) {
+  .answerMob {
+    * {
+      display: none;
+    }
+  }
+
+  .answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1013px;
+    width: 100%;
+    background: linear-gradient(to top left, #7330bf, #2a79bf 75%);
+    border-radius: 16px;
+    transition: all 0.2s ease-in;
+    padding: 2px;
+    &__inner {
+      // margin: 2px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 16px;
+      width: 100%;
+      // border: 1px solid white;
+      &__inner {
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #16182a;
+        border-radius: 16px;
+        align-items: flex-start;
+        gap: 24px;
+        overflow: hidden;
+        transition: all 0.2s linear;
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          align-self: center;
+          // padding: 0px 24px;
+          width: 100%;
+          // width: 1003px;
+          background-color: #16182a;
+
+          & > div {
+            width: auto;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; /* 140% */
+            letter-spacing: -0.24px;
+          }
+          & > img {
+            cursor: pointer;
+          }
+
+          &--question {
+            line-height: 28px;
+            letter-spacing: -1.2%;
+            transition: all 0.2s linear;
+          }
+        }
+        &__ans {
+          color: #fff;
+          font-family: 'Inter', sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 24px; /* 120% */
+          transition: all 0.2s linear;
+        }
+      }
+
+      // & #question {
+      //   display: flex;
+      //   width: 1013px;
+      //   padding: 24px;
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   gap: 24px;
+      // }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .answer {
+    display: none;
+  }
+  .answerMob {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, #7330bf, #2a79bf 75%);
+    border-radius: 16px;
+    overflow: hidden;
+
+    @media (max-width: 400px) {
+      // max-width: 360px;
+    }
+    &__inner {
+      // margin: 1px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 16px;
+      width: 100%;
+      padding: 1px;
+      // border: 1px solid white;
+      &__inner {
+        padding: 14px 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        background-color: #16182a;
+        border-radius: 16px;
+        align-items: flex-start;
+        gap: 12px;
+        &__container {
+          display: flex;
+          justify-content: space-between;
+          // align-self: center;
+
+          width: 100%;
+          background-color: #16182a;
+          position: relative;
+          // left: -7px;
+          transition: all 0.2s linear;
+
+          & > div {
+            width: auto;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.192px;
+          }
+          & > img {
+            position: relative;
+
+            cursor: pointer;
+          }
+
+          &--question {
+            letter-spacing: -1.2%;
+            line-height: 28px;
+            transition: all 0.2s linear;
+          }
+        }
+        &__ans {
+          color: #fff;
+          font-family: 'Inter', sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          transition: all 0.2s linear;
+        }
+      }
+
+      // & #question {
+      //   display: flex;
+      //   width: 1013px;
+      //   padding: 24px;
+      //   flex-direction: column;
+      //   align-items: flex-start;
+      //   gap: 24px;
+      // }
+    }
+  }
+}

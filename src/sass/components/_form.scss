@@ -1,0 +1,228 @@
+.fWButton {
+  &_white {
+    @include fWButton;
+    border: 1px solid #edf2f6;
+    font-weight: 400;
+    background-color: white;
+  }
+  &_theme {
+    @include fWButton;
+    color: white;
+    border: none;
+    background-color: $THEME_COLOR;
+    font-weight: 500;
+  }
+  &_whiteSky {
+    @include fWButton;
+    color: $SKY;
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 0.5rem;
+  }
+  &_danger {
+    @include fWButton;
+    color: $DANGER;
+    border: 1px solid $DANGER;
+    background-color: transparent;
+    font-weight: 500;
+  }
+  &_transparent {
+    @include fWButton;
+    @include typographyHome;
+    background-color: $HOME_COLOR;
+    color: $HOME_PRIMARY;
+    border: 2px solid $HOME_PRIMARY;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding: 12px 14px;
+    height: 56px;
+  }
+  &_transparentMob {
+    @include fWButton;
+    @include p-14-500-171Mob;
+    background-color: $HOME_COLOR;
+    color: $HOME_PRIMARY;
+    border: 2px solid $HOME_PRIMARY;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    padding: 12px 14px;
+    height: 40px;
+    display: flex;
+    // width: 132px;
+    height: 40px;
+    padding: 12px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  &_mobtransparent {
+    @include fWButton;
+    @include p-12-500-200Mob;
+    border: 2px solid $HOME_PRIMARY;
+    background-color: $HOME_COLOR;
+    color: $HOME_PRIMARY;
+    display: flex;
+    height: 40px;
+    padding: 12px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  &_nothing {
+    @include fWButton;
+    @include typographyHome;
+    background-color: transparent;
+    color: $TEXT_WHITE;
+    border: none;
+    height: 56px;
+    padding: 12px 8px;
+  }
+  &_sky {
+    @include fWButton;
+    @include typographyHome;
+    background-color: $HOME_PRIMARY;
+    color: $HOME_COLOR;
+    height: 56px;
+  }
+  &_skyMob {
+    @include fWButton;
+    @include db-16-700-150Mob;
+    background-color: $HOME_PRIMARY;
+    color: $HOME_COLOR;
+    height: 44px;
+  }
+  &_skySmaller {
+    @include fWButton;
+    @include typographyHome;
+    background-color: $HOME_PRIMARY;
+    color: $HOME_COLOR;
+    height: 48px;
+  }
+}
+
+.cInput {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+  position: relative;
+
+  @include respond(phone) {
+    gap: 8px;
+  }
+
+  label {
+    font-size: 0.8rem;
+    color: $TEXT_GRAYISH_COLOR;
+    text-align: start;
+  }
+
+  input,
+  textarea {
+    background-color: white;
+    box-shadow: 0px 4px 40px 0px #0000001a;
+    border: 1px solid #edf2f6;
+    height: 3rem;
+    border-radius: 2rem;
+    padding: 8px 16px 8px 16px;
+    color: $TEXT_DEFAULT_COLOR;
+    outline: none;
+
+    @include respond(tab-land) {
+      height: 2.5rem;
+    }
+
+    &::placeholder {
+      color: $TEXT_GRAYISH_COLOR;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 16px;
+    bottom: 2px;
+    width: 1.35rem;
+    height: 1.35rem;
+    transform: translateY(-50%);
+    @include respond(tab-land) {
+      bottom: 3px;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.cMenu {
+  margin-top: 0.5rem;
+  background-color: white;
+  box-shadow: 0px 4px 40px 0px #0000001a;
+  border: 1px solid #edf2f6;
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 8px 16px 8px 16px;
+  color: $TEXT_DEFAULT_COLOR;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  img {
+    position: absolute;
+    right: 1rem;
+  }
+
+  @include respond(tab-land) {
+    height: 2.5rem;
+  }
+}
+
+.smButton {
+  &_medium {
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: 8px 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.5s linear;
+
+    @include respond(phone) {
+      padding: 4px 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  &_small {
+    border: none;
+    outline: none;
+    padding: 2px 8px;
+    height: 22px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.5s linear;
+  }
+  &_small2 {
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    height: 32px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.5s linear;
+  }
+  &_glass {
+    @include glassButton;
+
+    &:hover {
+      color: #32395f;
+      background-color: #f8f9fa;
+    }
+
+    &_selected {
+      @include glassButton;
+      color: #32395f;
+      background-color: #f8f9fa;
+    }
+  }
+}

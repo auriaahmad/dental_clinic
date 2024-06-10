@@ -1,0 +1,40 @@
+.homeLayout {
+  background-color: $HOME_COLOR;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.homeLayoutMob {
+  background-color: $HOME_COLOR;
+  width: 100%;
+  display: none;
+
+  @media (max-width: 900px) {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+
+// .circles {
+//   width: 510px;
+//   height: 511px;
+//   flex-shrink: 0;
+//   border-radius: 50%; /* Set border-radius to 50% to make it a circle */
+//   opacity: 0.8;
+//   background: var(
+//     --primary-color,
+//     linear-gradient(180deg, #090221 0%, #0f76e3 100%)
+//   );
+//   filter: blur(175px);
+//   position: absolute;
+
+// }
+// .circle2 {
+//   top: -138px;
+//   left: -115px;
+// }
+// .circle3 {
+//   top: 1127px;
+//   left: 449px;
+// }

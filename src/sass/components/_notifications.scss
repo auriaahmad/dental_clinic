@@ -1,0 +1,11 @@
+.notifications {
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  &__header{
+    border-bottom:  1px solid $GRAY-2;
+    
+  }
+  &__bgColor{
+    background-color: #FAFBFC;
+  }
+}

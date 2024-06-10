@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Abstract
+@import './abstract/variables';
+@import './abstract/mixins';
+
+// Base
+@import './base/base';
+@import './base/typography';
+@import './base/utilities';
+
+// Components
+@import './components/form';
+@import './components/sidebar';
+@import './components/table';
+@import './components/modal';
+@import './components/planCard';
+@import './components/notifications';
+@import './components/navbar';
+@import './components/loading';
+@import './components/footer';
+@import './components/banner';
+@import './components/homeCard';
+@import './components/cards';
+@import './components/border';
+@import './components/question';
+@import './components/answer';
+@import './components/sideBarHome';
+
+// Layouts
+@import './layouts/auth';
+@import './layouts/main';
+@import './layouts/homeLayout';
+@import './layouts/qaLayout';
+
+// Pages
+@import './pages/signIn';
+@import './pages/passwordRecovery';
+@import './pages/dashboard';
+@import './pages/patientPlans';
+@import './pages/changePlan';
+@import './pages/users';
+@import './pages/userProfile';
+@import './pages/billing';
+@import './pages/prices';
+@import './pages/queries';
+@import './pages/query';
+@import './pages/privacy';
+@import './pages/legalWriting';
+@import './pages/cookies';
+@import './pages/download';
+@import './pages/home';
+@import './pages/advantage';
+@import './pages/web';

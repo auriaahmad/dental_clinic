@@ -1,0 +1,70 @@
+.auth {
+  display: flex;
+  height: 100vh;
+  &__left {
+    flex: 1;
+    position: relative;
+    @include respond(tab-port) {
+      background: linear-gradient(180deg, #090221 0%, #0f76e3 100%);
+    }
+
+    &__blue {
+      display: none;
+
+      @include respond(tab-port) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+
+      &--logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+        width: 8rem;
+
+        @media screen and (max-height: 810px) {
+          top: 10%;
+        }
+        @media screen and (max-height: 710px) {
+          top: 5%;
+        }
+      }
+
+      &--globe {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__right {
+    flex: 1;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #090221 0%, #0f76e3 100%);
+    position: relative;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+
+    &--globe {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &--logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 12rem;
+    }
+  }
+}

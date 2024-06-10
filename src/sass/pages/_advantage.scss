@@ -1,0 +1,130 @@
+@media (min-width: 900px) {
+  .advantageMob {
+    * {
+      display: none;
+    }
+  }
+  .advantage {
+    height: 1728;
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    &__heading {
+      color: #fff;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+
+      font-size: 72px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 110%; /* 61.6px */
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      &__sHeading {
+        color: #fff;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 39.6px */
+      }
+    }
+    &__content {
+      display: flex;
+      padding: 0px 160px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 24px;
+      @media (max-width: 1200px) {
+        padding: 0 0px;
+      }
+      & .primaryHeading {
+        color: #00b0f0;
+        font-family: 'Inter', sans-serif;
+
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 30.8px */
+      }
+      & > div {
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 22px */
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .advantage {
+    * {
+      display: none;
+    }
+  }
+  .advantageMob {
+    display: flex;
+    width: 100%;
+    padding: 20px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    &__heading {
+      @include w-24-800-110Mob;
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      align-self: stretch;
+      &__sHeading {
+        @include w-20-500-110Mob;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+      align-self: stretch;
+      & .primaryHeading {
+        color: #00b0f0;
+        font-family: 'Inter', sans-serif;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 17.6px */
+      }
+      & > div {
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 15.4px */
+      }
+    }
+  }
+}

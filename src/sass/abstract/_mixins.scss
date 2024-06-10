@@ -1,0 +1,305 @@
+@mixin fWButton {
+  width: 100%;
+  position: relative;
+  border-radius: 2rem;
+  height: 3rem;
+  outline: none;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.01rem;
+  box-shadow: 0px 4px 40px 0px #0000001a;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    height: 2.5rem;
+  }
+
+  img {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin activeTopTab {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  height: 1rem;
+  width: 1rem;
+  border-top-left-radius: 2.5rem;
+  background-color: white;
+}
+@mixin activeBottomTab {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  height: 1rem;
+  width: 1rem;
+  border-top-left-radius: 2.5rem;
+  background-color: white;
+}
+
+@mixin glassButton {
+  background-color: transparent;
+  height: 2.5rem;
+  border-radius: 5px;
+  transition: all 0.5s linear;
+  padding: 0 1rem;
+  border: none;
+  outline: none;
+  color: $TEXT_GRAYISH_COLOR;
+  font-size: 0.85rem;
+  font-weight: 500%;
+}
+
+@mixin mainHeading {
+  color: #32395f;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px; /* 105.556% */
+  letter-spacing: -0.36px;
+}
+@mixin typographyHome {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.5px;
+}
+
+@mixin w-36-800-110Mob {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 39.6px */
+}
+@mixin w-24-800-110Mob {
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 26.4px */
+}
+@mixin w-24-700-200Mob {
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+  letter-spacing: -0.48px;
+}
+@mixin w-14-400Mob {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@mixin w-14-600Mob {
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@mixin w-12-500Mob {
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@mixin w-12-400-160Mob {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
+}
+@mixin w-14-400-171Mob {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+@mixin w-14-400-160Mob {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+@mixin w-20-500-110Mob {
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 22px */
+}
+@mixin w-14-600-171Mob {
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 171.429% */
+}
+
+// grey
+@mixin g-12-400-200Mob {
+  color: #737794;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+}
+@mixin g-12-400-110Mob {
+  color: #737794;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+}
+
+// deepblue
+@mixin db-12-400-110Mob {
+  color: #0a0d23;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.5px;
+}
+@mixin db-16-700-150Mob {
+  color: #0a0d23;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+// primary
+@mixin p-16-400-160Mob {
+  color: #00b0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+@mixin p-16-600Mob {
+  color: #00b0f0;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+@mixin p-14-500-110Mob {
+  color: #00b0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 15.4px */
+}
+@mixin p-14-500-171Mob {
+  color: #00b0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.5px;
+}
+@mixin p-12-500-200Mob {
+  color: #00b0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 200% */
+  letter-spacing: 0.5px;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint== small-phone {
+    // 400px
+    @media (max-width: 25rem) {
+      @content;
+    }
+  }
+
+  @if $breakpoint== phone {
+    // 600px
+    @media (max-width: 37.5rem) {
+      @content;
+    }
+  }
+
+  @if $breakpoint== tab-smaller {
+    // 750px
+    @media (max-width: 46.875rem) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    // 900px
+    @media (max-width: 56.25rem) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75rem) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    // 1500px
+    @media (min-width: 93.5rem) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    // 1800px
+    @media (min-width: 112.5rem) {
+      @content;
+    }
+  }
+}

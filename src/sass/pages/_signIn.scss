@@ -1,0 +1,87 @@
+.signIn {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 2.25rem;
+  }
+
+  &__box {
+    max-width: 25rem;
+    width: 100%;
+    text-align: center;
+    @include respond(tab-port) {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+    &__borderedMessage {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      .hLine {
+        flex: 1;
+        height: 1px;
+        border-top: 1px solid #edf2f6;
+      }
+      span {
+        min-width: 8rem;
+        font-size: 0.75rem;
+        gap: 1rem;
+        color: $TEXT_GRAYISH_COLOR;
+      }
+    }
+
+    &__form {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      gap: 1.25rem;
+
+      &__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__loggedIn {
+          display: flex;
+          gap: 0.75rem;
+          span {
+            color: $TEXT_GRAYISH_COLOR;
+            font-size: 0.85rem;
+          }
+        }
+
+        &--link {
+          font-size: 0.85rem;
+          color: #32395f;
+        }
+      }
+
+      button {
+        margin-top: 1rem;
+      }
+    }
+
+    &--redirect {
+      color: #96a5b8;
+      margin-top: 2.25rem;
+      display: block;
+      font-size: 0.85rem;
+      a {
+        color: #00b0f0;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

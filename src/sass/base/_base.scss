@@ -1,0 +1,23 @@
+body {
+  background-color: $BG_COLOR;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  font-size: 100%;
+
+  @include respond(tab-land) {
+    font-size: 75% !important;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  &:not(i) {
+    font-family: 'Inter', sans-serif;
+    // color: $TEXT_DEFAULT_COLOR;
+  }
+}
